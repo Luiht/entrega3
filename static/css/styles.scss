@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import "variables";
+*{
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    margin: 0;
+    padding: 0;
+}
+    html{
+        body{
+        scroll-behavior: smooth;
+        .contenedor-header{
+            background-color: $bg-color;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            header{
+                max-width: 1100px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                nav{
+                    ul{
+                        a{
+                            text-align: none;
+                            color:#fff;
+                            margin: 0 15px;
+                            padding: 3px;
+                            transition: .5s;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+                ul{
+                    display: flex;
+                    list-style: none;
+                }
+                .logo{
+                a{
+                    font-family: "Righteous";
+                    font-size: 36px;
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+                }
+            }
+        }
+        .nav-responsive{
+            background-color: $primary-color;
+            color:#fff ;
+            padding:5px 10px;
+            border-radius: 5px;
+            cursor:pointer;
+            display: none;
+        }
+    }
+    .inicio{
+        background: linear-gradient(to top, rgba(30,35,38,.8),rgba(38,35,38,1)),
+        url(../img/fondo.jpg);
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        .contenedor-banner{
+            padding: 20px;
+            background: color #1e2326;
+            max-width: 350px;
+            margin: auto;
+            text-align: center;
+            border-radius: 40px;
+            h1{
+                margin-top: 40px;
+                font-size: 32px;
+                font-family:"Righteous";
+            }
+            h2{
+                font-size: 15px;
+                font-weight: normal;
+            }
+            .redes{
+                color: #fff;
+                display: inline-block;
+                text-decoration: none;
+                border: 1px solid #fff;
+                border-radius: 100%;
+                width: 42px;
+                height: 42px;
+                line-height: 42px;
+                margin: 40px 5px;
+                font-size: 20px;
+                transition: .3s;
+            }
+            .redes:hover{
+                background-color:$primary-color;
+            }        
+            .contenedor-img{
+                margin: auto;
+                img{
+                    margin-top: 40px;
+                    border: 10px solid $primary-color;
+                    display: block;
+                    width: 200px;
+                    margin: auto;
+                    border-radius: 100px
+                }
+            }
+            
+        }
+    }
+    .sobremi{
+        background-color: #1e2326; 
+        color: #fff;
+        padding: 50px 20px;
+    }
+}
+
+.contenedor-seccion{
+    max-width: 110px;
+    margin: auto;
+}
