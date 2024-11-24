@@ -129,19 +129,127 @@ html .sobremi .contenedor-seccion {
   max-width: 1100px;
   margin: auto;
 }
-html .sobremi .contenedor-seccion .fila {
+html .sobremi .fila {
   display: flex;
 }
-html .sobremi .contenedor-seccion .fila col {
+html .sobremi .fila .col {
   width: 50%;
 }
-html .sobremi .contenedor-seccion .fila col ul {
+html .sobremi .fila .col ul {
   list-style: none;
 }
-html .sobremi .contenedor-seccion .fila col h3 {
+html .sobremi .fila .col ul li {
+  margin: 12px 0;
+}
+html .sobremi .fila .col ul li strong {
+  display: inline-block;
+  color: #1CB698;
+  width: 130px;
+}
+html .sobremi .fila .col ul span {
+  background-color: #1CB698;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+html .sobremi .fila .col h3 {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
+}
+html .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+html .contenedor-intereses .intereses {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #252A2E;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+html .contenedor-intereses .intereses:hover {
+  background-color: #1CB698;
+}
+html .contenedor-intereses .intereses i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+html .skills {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+html .skills .contenedor-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+html .skills h2 {
+  font-size: 42px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+html .skills .fila {
+  display: flex;
+}
+html .skills .fila .col {
+  width: 50%;
+  padding: 0 20px;
+}
+html .skills .fila .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+html .skills .skill > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+html .skills .skill .barra-skill {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+html .skills .skill .barra-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1CB698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+html .skills .skill .progreso {
+  background-color: #1CB698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8x;
+}
+html .skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
