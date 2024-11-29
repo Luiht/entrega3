@@ -1,4 +1,196 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.skills, html {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+.skills .contenedor-seccion, html .contenedor-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills h2, html h2 {
+  font-size: 42px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.skills .fila, html .fila {
+  display: flex;
+}
+.skills .fila .col, html .fila .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .fila .col h3, html .fila .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+.skills .skill > span, html .skill > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .skill .barra-skill, html .skill .barra-skill {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .skill .barra-skill span, html .skill .barra-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1CB698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes comunic {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes tE {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes creatividad {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes dedicacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.sobremi, html {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+.sobremi h2, html h2 {
+  font-size: 42px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+.sobremi p, html p {
+  font: 18px;
+  line-height: 22px;
+}
+.sobremi p span, html p span {
+  color: #1CB698;
+  font-weight: bold;
+}
+.sobremi .contenedor-seccion, html .contenedor-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.sobremi .fila, html .fila {
+  display: flex;
+}
+.sobremi .fila .col, html .fila .col {
+  width: 50%;
+}
+.sobremi .fila .col ul, html .fila .col ul {
+  list-style: none;
+}
+.sobremi .fila .col ul li, html .fila .col ul li {
+  margin: 12px 0;
+}
+.sobremi .fila .col ul li strong, html .fila .col ul li strong {
+  display: inline-block;
+  color: #1CB698;
+  width: 130px;
+}
+.sobremi .fila .col ul span, html .fila .col ul span {
+  background-color: #1CB698;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.sobremi .fila .col h3, html .fila .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+
+.contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-intereses .intereses {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #252A2E;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.contenedor-intereses .intereses:hover {
+  background-color: #1CB698;
+}
+.contenedor-intereses .intereses i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
@@ -105,234 +297,6 @@ html .inicio .contenedor-banner .contenedor-img img {
   width: 200px;
   margin: auto;
   border-radius: 100px;
-}
-html .sobremi {
-  background-color: #1e2326;
-  color: #fff;
-  padding: 50px 20px;
-}
-html .sobremi h2 {
-  font-size: 42px;
-  font-family: "Righteous";
-  text-align: center;
-  padding: 20px 0;
-}
-html .sobremi p {
-  font: 18px;
-  line-height: 22px;
-}
-html .sobremi p span {
-  color: #1CB698;
-  font-weight: bold;
-}
-html .sobremi .contenedor-seccion {
-  max-width: 1100px;
-  margin: auto;
-}
-html .sobremi .fila {
-  display: flex;
-}
-html .sobremi .fila .col {
-  width: 50%;
-}
-html .sobremi .fila .col ul {
-  list-style: none;
-}
-html .sobremi .fila .col ul li {
-  margin: 12px 0;
-}
-html .sobremi .fila .col ul li strong {
-  display: inline-block;
-  color: #1CB698;
-  width: 130px;
-}
-html .sobremi .fila .col ul span {
-  background-color: #1CB698;
-  padding: 3px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-html .sobremi .fila .col h3 {
-  font-size: 28px;
-  font-family: "Righteous";
-  margin-bottom: 25px;
-}
-html .contenedor-intereses {
-  display: flex;
-  flex-wrap: wrap;
-}
-html .contenedor-intereses .intereses {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background-color: #252A2E;
-  border-radius: 10px;
-  margin: 0 15px 15px 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-html .contenedor-intereses .intereses:hover {
-  background-color: #1CB698;
-}
-html .contenedor-intereses .intereses i {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-html .skills {
-  background-color: #1e2326;
-  color: #fff;
-  padding: 50px 20px;
-}
-html .skills .contenedor-seccion {
-  max-width: 1100px;
-  margin: auto;
-}
-html .skills h2 {
-  font-size: 42px;
-  font-family: "Righteous";
-  text-align: center;
-  padding: 20px 0;
-}
-html .skills .fila {
-  display: flex;
-}
-html .skills .fila .col {
-  width: 50%;
-  padding: 0 20px;
-}
-html .skills .fila .col h3 {
-  font-size: 28px;
-  font-family: "Righteous";
-  margin-bottom: 25px;
-}
-html .skills .skill > span {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-html .skills .skill .barra-skill {
-  height: 8px;
-  width: 80%;
-  background-color: #131517;
-  position: relative;
-  margin-bottom: 30px;
-}
-html .skills .skill .barra-skill span {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #1CB698;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
-  top: -17px;
-  right: -15px;
-  font-size: 14px;
-}
-html .skills .skill .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
-}
-html .skills .skill .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-html .skills .skill .python {
-  width: 0%;
-  animation: 2s python forwards;
-}
-html .skills .skill .sql {
-  width: 0%;
-  animation: 2s sql forwards;
-}
-html .skills .skill .comunic {
-  width: 0%;
-  animation: 2s comunic forwards;
-}
-html .skills .skill .tE {
-  width: 0%;
-  animation: 2s tE forwards;
-}
-html .skills .skill .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-html .skills .skill .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-html .skills .skill .progreso {
-  background-color: #1CB698;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 8x;
-}
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 45%;
-  }
-}
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes python {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@keyframes sql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
-}
-@keyframes comunic {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes tE {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
