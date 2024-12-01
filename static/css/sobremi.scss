@@ -76,3 +76,12 @@
         margin-bottom: 10px;
     }
 }
+.arrowdown i{
+    position: relative;
+    top: 100px;
+    font-size: 60px;
+    color: white;
+}
+.arrowdown i:hover{
+    color: $primary-color;
+}
