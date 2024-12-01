@@ -26,7 +26,11 @@ window.onscroll = function(){
 const boton = document.getElementById("scroll");
 const destino = document.getElementById("sobremi");
 const destino2 = document.getElementById("skills")
+<<<<<<< HEAD
 const destino3 = document.getElementById("contacto")
+=======
+ 
+>>>>>>> bdd71184b7754a1cdbaed86c659b5f7c695f4025
 
 //Añadir la interacción
 function addSmoothScroll(button, target) {
@@ -38,4 +42,7 @@ function addSmoothScroll(button, target) {
 // Uso:
 addSmoothScroll(boton, destino);
 addSmoothScroll(boton, destino2);
+<<<<<<< HEAD
 addSmoothScroll(boton, destino3);
+=======
+>>>>>>> bdd71184b7754a1cdbaed86c659b5f7c695f4025
