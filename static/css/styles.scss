@@ -40,6 +40,9 @@
                             color: $primary-color;
                         }
                     }
+                    i{
+
+                    }
                 }
                 ul{
                     display: flex;
@@ -79,6 +82,11 @@
             margin: auto;
             text-align: center;
             border-radius: 40px;
+            .bg-icon{
+                background-color: #1e2326;
+                height: 500px;
+                border-radius: 50px;
+            }
             h1{
                 margin-top: 40px;
                 font-size: 32px;
@@ -107,7 +115,7 @@
             .contenedor-img{
                 margin: auto;
                 img{
-                    margin-top: 40px;
+                    margin-top: 30px;
                     border: 10px solid $primary-color;
                     display: block;
                     width: 200px;
@@ -142,7 +150,7 @@
 }
 
 footer{
-    background-color:#252A2E;
+    background-color:black;
     color: #fff;
     padding:50px 0 30px 0;
     text-align: center;
@@ -176,5 +184,30 @@ footer{
         border-radius:50% ;
         line-height: 50px;
         font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:980px){
+    #nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
     }
 }

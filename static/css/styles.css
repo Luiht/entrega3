@@ -357,6 +357,11 @@ html .inicio .contenedor-banner {
   text-align: center;
   border-radius: 40px;
 }
+html .inicio .contenedor-banner .bg-icon {
+  background-color: #1e2326;
+  height: 500px;
+  border-radius: 50px;
+}
 html .inicio .contenedor-banner h1 {
   margin-top: 40px;
   font-size: 32px;
@@ -386,7 +391,7 @@ html .inicio .contenedor-banner .contenedor-img {
   margin: auto;
 }
 html .inicio .contenedor-banner .contenedor-img img {
-  margin-top: 40px;
+  margin-top: 30px;
   border: 10px solid #1CB698;
   display: block;
   width: 200px;
@@ -405,9 +410,19 @@ html .inicio .contenedor-banner .contenedor-img img {
   color: #1CB698;
 }
 
-<<<<<<< HEAD
+.arrowdown i {
+  position: relative;
+  top: 100px;
+  font-size: 60px;
+  color: white;
+}
+
+.arrowdown i:hover {
+  color: #1CB698;
+}
+
 footer {
-  background-color: #252A2E;
+  background-color: black;
   color: #fff;
   padding: 50px 0 30px 0;
   text-align: center;
@@ -444,6 +459,28 @@ footer .arriba {
   font-size: 18px;
 }
 
-=======
->>>>>>> bdd71184b7754a1cdbaed86c659b5f7c695f4025
+@media screen and (max-width:980px){
+  nav{
+      display: none;
+  }
+  .nav-responsive{
+      display: block;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #252A2E;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
